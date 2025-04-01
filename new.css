@@ -25,7 +25,7 @@
     padding-right: 10px;
 }
 
-button {
+.number {
     width: 60px;
     height: 60px;
     font-size: 22px;
@@ -35,4 +35,27 @@ button {
     background-color: #f1f1f1;
     transition: 0.2s;
 }
-
+.hello
+{
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    transition: 0.2s;
+    background-color: orange;
+}
+.clear
+{
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    transition: 0.2s;
+    background-color: red;
+}
