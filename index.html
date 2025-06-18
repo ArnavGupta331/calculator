@@ -8,37 +8,37 @@
 <body>
     <link rel="stylesheet" href="new.css">
     <div class="calculator">
-        <input type="text" placeholder="0">
+        <input id="display"type="text" placeholder="0" readonly>
       <div>
-        <button class="operator">AC</button>
-        <button class="operator">DEL</button>
-        <button class="operator">%</button>
-        <button class="operator">/</button>
+        <button onclick="clearall()"class="operator">AC</button>
+        <button onclick="appendTodisplay('%')"class="operator">%</button>
+        <button onclick="appendTodisplay('/')"class="operator">/</button>
       </div>
       <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="operator">x</button>
+        <button onclick="appendTodisplay('7')">7</button>
+        <button onclick="appendTodisplay('8')">8</button>
+        <button onclick="appendTodisplay('9')">9</button>
+        <button class="operator" onclick="appendTodisplay('x')">x</button>
       </div>
       <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="operator">-</button>
+        <button onclick="appendTodisplay('4')">4</button>
+        <button onclick="appendTodisplay('5')">5</button>
+        <button onclick="appendTodisplay('6')">6</button>
+        <button onclick="appendTodisplay('-')" class="operator">-</button>
       </div>
       <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="operator">+</button>
+        <button onclick="appendTodisplay('1')">1</button>
+        <button onclick="appendTodisplay('2')">2</button>
+        <button onclick="appendTodisplay('3')">3</button>
+        <button onclick="appendTodisplay('+')" class="operator">+</button>
       </div>
       <div>
-        <button>00</button>
-        <button>0</button>
-        <button>.</button>
-        <button class="result">=</button>
+        <button onclick="appendTodisplay('00')">00</button>
+        <button onclick="appendTodisplay('0')">0</button>
+        <button onclick="appendTodisplay('.')">.</button>
+        <button onclick="calculate()" class="result">=</button>
       </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
